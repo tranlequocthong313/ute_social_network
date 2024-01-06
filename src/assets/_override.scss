@@ -1,0 +1,31 @@
+@import './base.css';
+
+.v-table {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    th {
+        span {
+            color: var(--light-text-color);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    td {
+        color: var(--light-text-color-secondary);
+    }
+
+    &.v-theme--dark {
+        th {
+            span {
+                color: var(--dark-text-color);
+            }
+        }
+
+        td {
+            color: var(--dark-text-color-3);
+        }
+    }
+}
